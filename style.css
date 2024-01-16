@@ -1,0 +1,254 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+   
+}
+/* ------------font----------------- */
+.main-content_title{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 44px;
+    color: #a2db52;
+    margin: 0px 0px 10px;
+    text-transform: uppercase; 
+}
+.size-title, .maps-title {
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 44px;
+    color: #a2db52;
+    text-transform: uppercase; 
+}
+.size-value{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    letter-spacing: 6px;
+    color: #a2db52;
+    text-transform: uppercase; 
+    display: inline-block;
+}
+.size-sm{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color:#343434;
+    position: relative;
+}
+
+.maps-title_box{
+    font-size: 28px;
+    font-weight: 800;
+    color: Black;
+    text-transform: uppercase; 
+}
+.maps-text{
+    font-family: 'Raleway', sans-serif;
+    color: Black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 0 12px;
+    text-align: center;
+
+}
+
+/* --------------------UNIVERSE------------------ */
+.container {
+    max-width: 1280px;
+    width: 100%; 
+}
+.transient {
+    transition: all .3s ease;
+}
+/* --------------------SECTION ABOUT------------------ */
+.about{
+    background-color: #f4f8fb;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 30px;
+}
+.main-content{
+    width: 50%;
+}
+.main-background{
+    width: 50%;
+    background-image: url(./image/central_bg.webp);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.main-content_text{
+    font-family: 'Raleway', sans-serif;
+    color: Black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0px 0px 15px; 
+}
+
+.about-btn{
+    width: 270px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background: #5298d4;
+    border-radius: 24px;
+    color: #f4f8fb;
+    padding: 14px 0px;
+    font-size: 16px;
+    border-radius: 1px solid transparent;
+}
+
+.about-btn:hover{
+    background: #8fc3f1;
+    color: #fff;   
+    
+}
+/* --------------------SECTION SIZE------------------ */
+.size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 6px solid #a2db52;
+    border-right: 6px solid #a2db52;
+}
+.size-header, 
+.maps-header {
+    width: 96%;
+    background-color: #343434;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin-bottom: 65px;
+
+}
+.size-elements{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+}
+.size-boxe{
+    width: 25%;
+    height: 80px;
+    background-color: #f4f8fb;
+    padding: 0 0 12px 12px;
+
+}
+.size-conteiner{
+    position: relative;
+    top: -50px;
+
+}
+.size-boxe:hover .size-sm{
+    color: #343434;
+    
+}
+.size-boxe:hover .size-value{
+    color: #343434;
+    transform: scale(110%) translateY(-5px);
+}
+.size-boxe:hover .size-sm{
+    color: #a2db52;
+}
+
+/* --------------------SECTION MAPS------------------ */
+.maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url(./image/2bg.png);
+}
+.maps-elements{
+    width: 100%;
+}
+.maps-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.maps-conteiner:hover .map {
+    transform: scale(105%);
+}
+.maps-conteiner:hover .circle-btn{
+    background-color: #a2db52;
+    color: #343434;
+}
+.maps-conteiner{
+   width: 33%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:20px;
+}
+.maps-image_box{
+    width: 100%;
+}
+.map {
+    height: 380px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.map1{
+    background-image: url(./image/1map_icon.webp);
+}
+.map2{
+    background-image: url(./image/2map_icon.webp);
+}
+.map3{
+    background-image: url(./image/3map_icon.webp);
+}
+
+.maps-content_box{
+    position: relative;
+    top:-45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle-btn{
+    background-color: #f4ec32;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#343434;
+    font-family: 'Anton', sans-serif;
+    font-size: 38px;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
